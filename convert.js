@@ -6,8 +6,8 @@
  * @returns {number} the number of degrees C
  */
 function convertToCelsius(fahren) {
-    (fahren - 32) * 5/9;
-   
+    return (fahren - 32) * 5/9;
+
 }
 
 /**
@@ -25,14 +25,14 @@ function convertToCelsius(fahren) {
  * @param {number} fahren
  * @param {number} celc
  */
-function createMessage(fahren) {
-    if(fahren < 32){
+function createMessage(fahren, celc) {
+    if(fahren < 32 || celc < 0){
         console.log("very cold");
     }   
-    else if(fahren < 64){
+    else if(fahren < 64 || celc < 10){
         console.log("cold");
     }
-    else if(fahren < 86){
+    else if(fahren < 86|| celc < 50){
         console.log("warm");
     }
     else{
