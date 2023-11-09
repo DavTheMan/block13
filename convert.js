@@ -6,8 +6,7 @@
  * @returns {number} the number of degrees C
  */
 function convertToCelsius(fahren) {
-    return (fahren - 32) * 5/9;
-
+    console.log((fahren - 32) * 5/9);
 }
 
 /**
