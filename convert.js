@@ -6,7 +6,8 @@
  * @returns {number} the number of degrees C
  */
 function convertToCelsius(fahren) {
-    celc = (fahren - 32) * 5/9;
+    (fahren - 32) * 5/9;
+   
 }
 
 /**
@@ -24,7 +25,7 @@ function convertToCelsius(fahren) {
  * @param {number} fahren
  * @param {number} celc
  */
-function createMessage(fahren, celc) {
+function createMessage(fahren) {
     if(fahren < 32){
         console.log("very cold");
     }   
@@ -45,8 +46,8 @@ function createMessage(fahren, celc) {
  * @returns {number} a number between 0 and the int passed in
  */
 function rand(limit) {
-    console.log(Math.round(limit));
-    return Math.floor(Math.random() * limit);
+    console.log(Math.round(Math.random() * limit));
+    //return Math.floor(Math.random() * limit);
 }
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
